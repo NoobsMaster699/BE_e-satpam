@@ -1,0 +1,24 @@
+@id=67505f051311ad1e3781cb6b
+### create user
+POST http://localhost:3000/users
+Content-Type: application/json
+{
+  "name":"Omke Gamns",
+  "email":"omkegams@gmail.com"
+}
+
+### update user
+PUT http://localhost:3000/users/{{id}}
+Content-Type: application/json
+{
+  "name":"Omke Gamns",
+  "email":"omkegams@gmail.com"
+}
+
+### find by id
+GET http://localhost:3000/users/{{id}}
+Content-Type: application/json
+
+### delete user
+DELETE http://localhost:3000/users/{{id}}
+Content-Type: application/json
